@@ -1,0 +1,96 @@
+<html lang="en-US">
+
+<head>
+    <title>Survey Analysis</title>
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+    <!-- Use Css external file -->
+    <link href="../public/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/niceSurvey">Survey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/niceSurvey">Nice Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/analysis">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Survey analysis</h1>
+        <!-- <h2>Colors</h2>
+        <ul>
+            <% for (var i=0; i<results[0].length; i++){ %>
+            <li><%= results[0][i].color %> : <%= results[0][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Fruits</h2>
+        <ul>
+            <% for (var i=0; i<results[1].length; i++){ %>
+            <li><%= results[1][i].fruit %> : <%= results[1][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Animals</h2>
+        <ul>
+            <% for (var i=0; i<results[2].length; i++){ %>
+            <li><%= results[2][i].animal %> : <%= results[2][i].count %></li>
+            <% } %>
+        </ul> -->
+        <h2>Name of participants</h2>
+        <ul>
+            <% for (var i=0; i<results[5].length; i++){ %>
+            <li><%= results[5][i].name %> </li>
+            <% } %>
+        </ul>
+        <h2>Comfortable purchasing from this website</h2>
+        <ul>
+            <% for (var i=0; i<results[3].length; i++){ %>
+            <li><%= results[3][i].comfortable %> : <%= results[3][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Agreed statements</h2>
+        <ul>
+            <% for (var i=0; i<results[6].length; i++){ %>
+            <li><%= results[6][i].statements %> : <%= results[6][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Likely to recommand the website</h2>
+        <ul>
+            <% for (var i=0; i<results[7].length; i++){ %>
+            <li><%= results[7][i].recommendation %> : <%= results[7][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Feedbacks des clients</h2>
+        <ul>
+            <% for (var i=0; i<results[8].length; i++){ %>
+            <li><%= results[8][i].feedback %> : <%= results[8][i].count %></li>
+            <% } %>
+        </ul>
+        <h2>Agree with terms and conditions</h2>
+        <ul>
+            <% for (var i=0; i<results[4].length; i++){ %>
+            <li><%= results[4][i].agree %> : <%= results[4][i].count %></li>
+            <% } %>
+        </ul>
+    </div>
+
+</body>
+
+</html>

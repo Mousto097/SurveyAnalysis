@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <title>Questionnaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+  <!-- Use Css external file -->
+  <link href="../public/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/niceSurvey">Survey</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/niceSurvey">Nice Survey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/analysis">Analysis</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <h1>Please fill up the questionnaire below</h1>
+    <br>
+    <br>
+
+    <form>
+      <h3>1. Please enter your full name</h3>
+      <input type="text" name="name" placeholder="Enter your full name" required />
+      <br>
+      <br>
+
+      <h3>2. Do you feel comfortable purchasing from this website?</h3>
+      <input type="radio" name="comfortable" value="yes"> Yes<br>
+      <input type="radio" name="comfortable" value="no"> No<br>
+
+      <br>
+      <h3>3. Please indicate if you agree or disagree with the following statements</h3>
+      <input type="checkbox" name="statements" value="s1"> I enjoy using this website<br>
+      <input type="checkbox" name="statements" value="s2"> This website has a clear purpose<br>
+      <input type="checkbox" name="statements" value="s3"> I am able to find what I need quickly on this website<br>
+      <br>
+
+      <h3>4. How likely are you going to recommend this website?</h3>
+      <select name="recommendation">
+        <option value="r1" selected="selected">1</option>
+        <option value="r2">2</option>
+        <option value="r3">3</option>
+        <option value="r4">4</option>
+        <option value="r5">5</option>
+      </select>
+      <br>
+      <br>
+
+      <h3>5. What would make you more satisfied with the website?</h3>
+      <input type="text" name="feedback" placeholder="Enter here..." required />
+      <br>
+      <br>
+
+      <h3>6. Do you agree to terms and conditions?</h3>
+      <input type="checkbox" name="agree" value="agree"> I agree
+      <br>
+      <br>
+
+      <button type="submit" class="btn btn-success" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+  </div>
+  <script src="/assets/action.js"></script>
+</body>
+
+</html>
