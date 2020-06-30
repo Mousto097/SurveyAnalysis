@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/niceSurvey">Nice Survey</a>
+          <a class="nav-link" href="/niceSurvey">Complete Survey</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/analysis">Analysis</a>
@@ -47,23 +47,25 @@
       <br>
 
       <h3>2. Do you feel comfortable purchasing from this website?</h3>
-      <input type="radio" name="comfortable" value="yes"> Yes<br>
-      <input type="radio" name="comfortable" value="no"> No<br>
+      <input type="radio" name="comfortable" value="Yes"> Yes<br>
+      <input type="radio" name="comfortable" value="No"> No<br>
 
       <br>
       <h3>3. Please indicate if you agree or disagree with the following statements</h3>
-      <input type="checkbox" name="statements" value="s1"> I enjoy using this website<br>
-      <input type="checkbox" name="statements" value="s2"> This website has a clear purpose<br>
-      <input type="checkbox" name="statements" value="s3"> I am able to find what I need quickly on this website<br>
+      <input type="checkbox" name="statements" value="I enjoy using this website"> I enjoy using this website<br>
+      <input type="checkbox" name="statements" value="This website has a clear purpose"> This website has a clear
+      purpose<br>
+      <input type="checkbox" name="statements" value="I am able to find what I need quickly on this website"> I am able
+      to find what I need quickly on this website<br>
       <br>
 
       <h3>4. How likely are you going to recommend this website?</h3>
       <select name="recommendation">
-        <option value="r1" selected="selected">1</option>
-        <option value="r2">2</option>
-        <option value="r3">3</option>
-        <option value="r4">4</option>
-        <option value="r5">5</option>
+        <option value="1 star" selected="selected">1</option>
+        <option value="2 stars">2</option>
+        <option value="3 stars">3</option>
+        <option value="4 stars">4</option>
+        <option value="5 stars">5</option>
       </select>
       <br>
       <br>
@@ -74,7 +76,11 @@
       <br>
 
       <h3>6. Do you agree to terms and conditions?</h3>
-      <input type="checkbox" name="agree" value="agree"> I agree
+      <!-- <input type="checkbox" name="agree" value="Agree"> I agree -->
+      <select name="agree">
+        <option value="Do not agree" selected="selected">Do not agree</option>
+        <option value="I agree">I agree</option>
+      </select>
       <br>
       <br>
 

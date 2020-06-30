@@ -60,7 +60,7 @@ module.exports = function (app) {
         res.render('showResults', {
             results: [color, fruit, animal, comfortable, agree, name, statements, recommendation, feedback]
         });
-        console.log([color, fruit, animal, comfortable]);
+        // console.log([color, fruit, animal, comfortable]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
@@ -78,7 +78,7 @@ module.exports = function (app) {
         for (var key in json) {
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "color") && (json[key].length === 2)) {
+            if ((key === "statements") && (json[key].length === 2)) {
                 for (var item in json[key]) {
                     combineCounts(key, json[key][item]);
                 }

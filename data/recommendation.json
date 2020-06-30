@@ -1,16 +1,1 @@
-[
-  { "recommendation": "5 stars", "count": 10 },
-  { "recommendation": "4 stars", "count": 31 },
-  {
-    "recommendation": "3 stars",
-    "count": 22
-  },
-  {
-    "recommendation": "2 stars",
-    "count": 11
-  },
-  {
-    "recommendation": "1 star",
-    "count": 4
-  }
-]
+[{"recommendation":"5 stars","count":11},{"recommendation":"4 stars","count":32},{"recommendation":"3 stars","count":22},{"recommendation":"2 stars","count":11},{"recommendation":"1 star","count":4}]

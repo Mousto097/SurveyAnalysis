@@ -1,4 +1,1 @@
-[
-  { "agree": "Agree", "count": 12 },
-  { "agree": "Do not agree", "count": 5 }
-]
+[{"agree":"Agree","count":12},{"agree":"Do not agree","count":6},{"agree":"I agree","count":1}]

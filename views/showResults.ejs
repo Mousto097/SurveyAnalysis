@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/niceSurvey">Nice Survey</a>
+                    <a class="nav-link" href="/niceSurvey">Complete Survey</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/analysis">Analysis</a>
@@ -35,6 +35,8 @@
 
     <div class="container">
         <h1>Survey analysis</h1>
+        <br>
+        <br>
         <!-- <h2>Colors</h2>
         <ul>
             <% for (var i=0; i<results[0].length; i++){ %>
@@ -53,37 +55,37 @@
             <li><%= results[2][i].animal %> : <%= results[2][i].count %></li>
             <% } %>
         </ul> -->
-        <h2>Name of participants</h2>
+        <h3>Name of participants</h3>
         <ul>
             <% for (var i=0; i<results[5].length; i++){ %>
             <li><%= results[5][i].name %> </li>
             <% } %>
         </ul>
-        <h2>Comfortable purchasing from this website</h2>
+        <h3>Comfortable purchasing from this website</h3>
         <ul>
             <% for (var i=0; i<results[3].length; i++){ %>
             <li><%= results[3][i].comfortable %> : <%= results[3][i].count %></li>
             <% } %>
         </ul>
-        <h2>Agreed statements</h2>
+        <h3>Agreed statements</h3>
         <ul>
             <% for (var i=0; i<results[6].length; i++){ %>
             <li><%= results[6][i].statements %> : <%= results[6][i].count %></li>
             <% } %>
         </ul>
-        <h2>Likely to recommand the website</h2>
+        <h3>Likely to recommand the website</h3>
         <ul>
             <% for (var i=0; i<results[7].length; i++){ %>
             <li><%= results[7][i].recommendation %> : <%= results[7][i].count %></li>
             <% } %>
         </ul>
-        <h2>Feedbacks des clients</h2>
+        <h3>Feedbacks des clients</h3>
         <ul>
             <% for (var i=0; i<results[8].length; i++){ %>
             <li><%= results[8][i].feedback %> : <%= results[8][i].count %></li>
             <% } %>
         </ul>
-        <h2>Agree with terms and conditions</h2>
+        <h3>Agree with terms and conditions</h3>
         <ul>
             <% for (var i=0; i<results[4].length; i++){ %>
             <li><%= results[4][i].agree %> : <%= results[4][i].count %></li>
